@@ -27,6 +27,7 @@ body *{
 .shapes div{
     background-color: var(--shapes);
     position: absolute;
+    z-index: -10;
 }
 
 .shapes .topleft{
