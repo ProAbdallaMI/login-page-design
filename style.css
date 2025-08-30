@@ -1,0 +1,151 @@
+:root{
+    --bg: #3F3FFF;
+    --shapes: #2F2FFF;
+    --text: #FFFFFF;
+    --placeholder: #AAAAAA;
+    --border: #0ABE0A;
+    --secondary-text: #28FD28;
+    --secondary-bg: #033003;
+    --google-hover: #0A700A;
+}
+
+body{
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: inner, sans-serif;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+}
+
+body *{
+    box-sizing: border-box;
+}
+
+
+ /* background shapes part */
+.shapes div{
+    background-color: var(--shapes);
+    position: absolute;
+    z-index: -10;
+}
+
+.shapes .topleft{
+    width: 300px;
+    height: 300PX;
+    border-radius: 0 0 300px 0;
+}
+
+.shapes .bottomleft{
+    width: 200px;
+    height: 200px;
+    bottom: 0;
+    border-radius: 0 200px 0 0;
+}
+
+.shapes .first{
+    width: 115px;
+    height: 300px;
+    right: 0;
+    bottom: 0;
+    border-radius: 100px 0 0 100px;
+}
+.shapes .second{
+    width: 230px;
+    height: 190px;
+    bottom: 0;
+    right: 33px;
+    border-radius: 100px 100px 0 0;
+}
+.shapes .third{
+    width: 230px;
+    height: 75px;
+    right: 200px;
+    bottom: 0;
+    border-radius: 90px 90px 0 0;
+}
+
+
+
+    /* login form desgin */
+
+.login{
+    margin: auto;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.login .header h1 {
+    text-align: center;
+    font-size: 38px;
+}
+
+.login .header p {
+    text-align: center;
+    font-size: 16px;
+}
+
+.login .form input, .login .google{
+    font-size: 20px;
+    color: var(--text);
+    background: transparent;
+    padding: 20px 25px;
+    width: 100%;
+    height: 62px;
+    margin-top: 35px;
+    border: 1px solid var(--text);
+    border-radius: 25px;
+}
+
+.login .form input::placeholder{
+    color: var(--placeholder);
+}
+
+.login .form input:last-child{
+    color: var(--secondary-text);
+    border: var(--border) 1px solid;
+}
+
+.login .form input:last-child:hover{
+    color: var(--text);
+    background-color: var(--secondary-bg);
+}
+
+
+ .login .form input:focus{
+    outline: none;
+}
+
+.login .form a{
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 260px;
+    font-weight: 200;
+    cursor: pointer;
+    color: var(--text);
+    text-decoration: none;
+}
+
+.login .google{
+    background-color: var(--secondary-bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+}
+
+.login .google:hover{
+    background-color: var(--google-hover);
+}
+
+
+.login .google img{
+    width: 30px;
+    height: 30px;
+}
+.login .google span{
+    margin-left: 10px;
+}
+
